@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import HeroSection from "@/features/home/hero-section";
+import FeaturedArtisans from "@/features/home/featured-artisans";
+import ImpactSection from "@/features/home/impact-section";
 
 const Index = () => {
+  // Set page title
+  useEffect(() => {
+    document.title = "Heritix - Connecting Artisans & Art Lovers";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        <HeroSection />
+        <FeaturedArtisans />
+        <ImpactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
