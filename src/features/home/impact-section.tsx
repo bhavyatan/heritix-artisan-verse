@@ -10,7 +10,7 @@ const ImpactSection = () => {
     <section className="py-16 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-serif font-bold">
+          <h2 className="text-3xl font-serif font-bold text-foreground">
             Our Global Impact
           </h2>
           <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
@@ -23,28 +23,28 @@ const ImpactSection = () => {
           <ImpactStat 
             value="1,200+"
             label="Artisans Supported"
-            icon={<Users className="h-6 w-6 text-heritix-700" />}
+            icon={<Users className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
           />
           <ImpactStat 
             value="$2.8M"
             label="Direct Artisan Income" 
-            icon={<Coins className="h-6 w-6 text-heritix-700" />}
+            icon={<Coins className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
           />
           <ImpactStat 
             value="42"
             label="Countries Reached"
-            icon={<Globe className="h-6 w-6 text-heritix-700" />}
+            icon={<Globe className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
           />
           <ImpactStat 
             value="15,000+"
             label="Trees Planted"
-            icon={<TreePine className="h-6 w-6 text-heritix-700" />}
+            icon={<TreePine className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
           />
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="lg:w-1/2">
-            <h3 className="text-2xl font-serif font-bold mb-4">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">
               Craft Preservation Distribution
             </h3>
             <p className="text-muted-foreground mb-6">
