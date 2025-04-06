@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>{t('footer.copyright').replace('2025', currentYear)}</p>
+          <p>{t('footer.copyright', { year: currentYear })}</p>
           <p className="mt-1">
             {t('footer.tagline2')}
           </p>
