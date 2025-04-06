@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ImpactStat from "@/components/impact-stat";
 import { ImpactAreaChart } from "@/features/impact/impact-chart";
-import { Users, TreePine, Globe, CoinsHand, Award, ShoppingCart } from "lucide-react";
+import { Users, TreePine, Globe, Coins, Award, ShoppingCart } from "lucide-react";
 
 const Impact = () => {
   useEffect(() => {
@@ -38,7 +38,7 @@ const Impact = () => {
               value="$2.8M"
               label="Direct Artisan Income" 
               color="bg-heritix-50"
-              icon={<CoinsHand className="h-6 w-6 text-heritix-700" />}
+              icon={<Coins className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="42"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ImpactStat from "@/components/impact-stat";
 import { CraftDistributionPieChart } from "../impact/impact-chart";
-import { Users, TreePine, Globe, CoinsHand } from "lucide-react";
+import { Users, TreePine, Globe, Coins } from "lucide-react";
 
 const ImpactSection = () => {
   return (
@@ -28,7 +28,7 @@ const ImpactSection = () => {
           <ImpactStat 
             value="$2.8M"
             label="Direct Artisan Income" 
-            icon={<CoinsHand className="h-6 w-6 text-heritix-700" />}
+            icon={<Coins className="h-6 w-6 text-heritix-700" />}
           />
           <ImpactStat 
             value="42"
