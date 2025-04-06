@@ -23,22 +23,22 @@ const ImpactSection = () => {
           <ImpactStat 
             value="1,200+"
             label="Artisans Supported"
-            icon={<Users className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
+            icon={<Users className="h-6 w-6 text-heritix-700 dark:text-heritix-400" />}
           />
           <ImpactStat 
             value="$2.8M"
             label="Direct Artisan Income" 
-            icon={<Coins className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
+            icon={<Coins className="h-6 w-6 text-heritix-700 dark:text-heritix-400" />}
           />
           <ImpactStat 
             value="42"
             label="Countries Reached"
-            icon={<Globe className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
+            icon={<Globe className="h-6 w-6 text-heritix-700 dark:text-heritix-400" />}
           />
           <ImpactStat 
             value="15,000+"
             label="Trees Planted"
-            icon={<TreePine className="h-6 w-6 text-heritix-700 dark:text-heritix-500" />}
+            icon={<TreePine className="h-6 w-6 text-heritix-700 dark:text-heritix-400" />}
           />
         </div>
 
