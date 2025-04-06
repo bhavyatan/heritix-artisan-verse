@@ -1,0 +1,69 @@
+
+{
+  "nav": {
+    "explore": "Explore",
+    "artisans": "Artisans",
+    "journeys": "Art Journeys",
+    "impact": "Impact",
+    "signIn": "Sign In"
+  },
+  "home": {
+    "hero": {
+      "title": "Preserving Heritage Through Direct Artisan Connections",
+      "subtitle": "Discover authentic traditional art directly from skilled artisans around the world, while supporting sustainable practices and cultural preservation.",
+      "cta1": "Start Your Art Journey",
+      "cta2": "Meet Our Artisans"
+    },
+    "featuredArtisans": {
+      "title": "Meet Our Artisans",
+      "subtitle": "Discover skilled craftspeople preserving centuries-old traditions while creating sustainable livelihoods.",
+      "viewAll": "View All Artisans"
+    },
+    "impact": {
+      "title": "Our Global Impact",
+      "subtitle": "Through direct connections between artisans and customers, we're creating sustainable livelihoods and preserving traditional arts.",
+      "stat1": "Artisans Supported",
+      "stat2": "Direct Artisan Income",
+      "stat3": "Countries Reached",
+      "stat4": "Trees Planted",
+      "chartTitle": "Craft Preservation Distribution",
+      "chartDesc": "Our platform is helping to preserve diverse traditional crafts across multiple regions, ensuring these cultural treasures continue to thrive for generations to come.",
+      "exploreFull": "Explore Our Full Impact"
+    }
+  },
+  "impact": {
+    "title": "Our Global Impact",
+    "subtitle": "Tracking our progress in artisan empowerment, cultural preservation, and environmental sustainability.",
+    "stat1": "Artisans Supported",
+    "stat2": "Direct Artisan Income",
+    "stat3": "Countries Reached",
+    "stat4": "Trees Planted",
+    "stat5": "Craft Traditions",
+    "stat6": "Direct Purchases",
+    "chartTitle": "Artisan Income & Environmental Impact",
+    "chartDesc": "As direct artisan income increases, we're also growing our environmental impact through our sustainable practices program, which includes tree planting initiatives and eco-friendly packaging.",
+    "legend1": "Artisan Income ($)",
+    "legend2": "Trees Planted",
+    "sustainTitle": "Sustainability Initiatives",
+    "sustain1": {
+      "title": "Eco-Friendly Packaging",
+      "desc": "100% of our packaging is made from recycled materials and is fully biodegradable."
+    },
+    "sustain2": {
+      "title": "Tree Planting Program",
+      "desc": "For every purchase, we plant trees in regions where our artisans live and work, helping to restore local ecosystems."
+    },
+    "sustain3": {
+      "title": "Carbon-Neutral Shipping",
+      "desc": "We offset 100% of the carbon footprint from shipping through verified carbon offset projects."
+    }
+  },
+  "footer": {
+    "tagline": "Empowering artisans globally through direct connections and sustainable practices.",
+    "discover": "Discover",
+    "joinUs": "Join Us",
+    "support": "Support",
+    "copyright": "© 2025 Heritix. All rights reserved.",
+    "tagline2": "Connecting artisans and art lovers directly, preserving cultural heritage around the world."
+  }
+}

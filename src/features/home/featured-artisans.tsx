@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import ArtisanCard from "@/components/artisan-card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -39,6 +40,7 @@ const artisansData = [
 
 const FeaturedArtisans = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -53,15 +55,15 @@ const FeaturedArtisans = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
         <div>
           <h2 className="text-3xl font-serif font-bold">
-            Meet Our Artisans
+            {t('home.featuredArtisans.title')}
           </h2>
           <p className="mt-2 text-muted-foreground max-w-2xl">
-            Discover skilled craftspeople preserving centuries-old traditions while creating sustainable livelihoods.
+            {t('home.featuredArtisans.subtitle')}
           </p>
         </div>
         <Button asChild variant="ghost" className="mt-4 md:mt-0">
           <Link to="/artisans" className="flex items-center gap-2">
-            View All Artisans <ArrowRight className="h-4 w-4" />
+            {t('home.featuredArtisans.viewAll')} <ArrowRight className="h-4 w-4" />
           </Link>
         </Button>
       </div>

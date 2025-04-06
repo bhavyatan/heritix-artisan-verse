@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ImpactStat from "@/components/impact-stat";
@@ -7,6 +8,8 @@ import { ImpactAreaChart } from "@/features/impact/impact-chart";
 import { Users, TreePine, Globe, Coins, Award, ShoppingCart } from "lucide-react";
 
 const Impact = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     document.title = "Our Impact | Heritix";
   }, []);
@@ -18,9 +21,9 @@ const Impact = () => {
         {/* Hero Section */}
         <div className="bg-artisan-950 text-white py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Global Impact</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">{t('impact.title')}</h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
-              Tracking our progress in artisan empowerment, cultural preservation, and environmental sustainability.
+              {t('impact.subtitle')}
             </p>
           </div>
         </div>
@@ -30,37 +33,37 @@ const Impact = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
             <ImpactStat 
               value="1,200+"
-              label="Artisans Supported"
+              label={t('impact.stat1')}
               color="bg-heritix-50"
               icon={<Users className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="$2.8M"
-              label="Direct Artisan Income" 
+              label={t('impact.stat2')} 
               color="bg-heritix-50"
               icon={<Coins className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="42"
-              label="Countries Reached"
+              label={t('impact.stat3')}
               color="bg-heritix-50"
               icon={<Globe className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="15,000+"
-              label="Trees Planted"
+              label={t('impact.stat4')}
               color="bg-heritix-50"
               icon={<TreePine className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="85"
-              label="Craft Traditions"
+              label={t('impact.stat5')}
               color="bg-heritix-50"
               icon={<Award className="h-6 w-6 text-heritix-700" />}
             />
             <ImpactStat 
               value="28,500+"
-              label="Direct Purchases" 
+              label={t('impact.stat6')} 
               color="bg-heritix-50"
               icon={<ShoppingCart className="h-6 w-6 text-heritix-700" />}
             />
@@ -70,20 +73,19 @@ const Impact = () => {
         {/* Income and Environmental Impact Chart */}
         <section className="py-12 bg-muted">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-serif font-bold mb-8">Artisan Income & Environmental Impact</h2>
+            <h2 className="text-3xl font-serif font-bold mb-8">{t('impact.chartTitle')}</h2>
             <p className="max-w-3xl mb-6 text-muted-foreground">
-              As direct artisan income increases, we're also growing our environmental impact through our sustainable 
-              practices program, which includes tree planting initiatives and eco-friendly packaging.
+              {t('impact.chartDesc')}
             </p>
             <ImpactAreaChart />
             <div className="flex justify-center gap-8 mt-6">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-heritix-600"></div>
-                <span className="text-sm">Artisan Income ($)</span>
+                <span className="text-sm">{t('impact.legend1')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-artisan-700"></div>
-                <span className="text-sm">Trees Planted</span>
+                <span className="text-sm">{t('impact.legend2')}</span>
               </div>
             </div>
           </div>
@@ -100,24 +102,24 @@ const Impact = () => {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-serif font-bold mb-6">Sustainability Initiatives</h2>
+              <h2 className="text-3xl font-serif font-bold mb-6">{t('impact.sustainTitle')}</h2>
               <div className="space-y-6">
                 <div className="bg-heritix-50 rounded-lg p-4 shadow-sm">
-                  <h3 className="font-medium text-lg mb-2">Eco-Friendly Packaging</h3>
+                  <h3 className="font-medium text-lg mb-2">{t('impact.sustain1.title')}</h3>
                   <p className="text-muted-foreground">
-                    100% of our packaging is made from recycled materials and is fully biodegradable.
+                    {t('impact.sustain1.desc')}
                   </p>
                 </div>
                 <div className="bg-heritix-50 rounded-lg p-4 shadow-sm">
-                  <h3 className="font-medium text-lg mb-2">Tree Planting Program</h3>
+                  <h3 className="font-medium text-lg mb-2">{t('impact.sustain2.title')}</h3>
                   <p className="text-muted-foreground">
-                    For every purchase, we plant trees in regions where our artisans live and work, helping to restore local ecosystems.
+                    {t('impact.sustain2.desc')}
                   </p>
                 </div>
                 <div className="bg-heritix-50 rounded-lg p-4 shadow-sm">
-                  <h3 className="font-medium text-lg mb-2">Carbon-Neutral Shipping</h3>
+                  <h3 className="font-medium text-lg mb-2">{t('impact.sustain3.title')}</h3>
                   <p className="text-muted-foreground">
-                    We offset 100% of the carbon footprint from shipping through verified carbon offset projects.
+                    {t('impact.sustain3.desc')}
                   </p>
                 </div>
               </div>

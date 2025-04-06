@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import ThemeToggle from "./theme-toggle";
 import LanguageSwitcher from "./language-switcher";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,7 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,16 +28,16 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             <Link to="/explore" className="px-3 py-2 rounded-md hover:bg-accent">
-              Explore
+              {t('nav.explore')}
             </Link>
             <Link to="/artisans" className="px-3 py-2 rounded-md hover:bg-accent">
-              Artisans
+              {t('nav.artisans')}
             </Link>
             <Link to="/journeys" className="px-3 py-2 rounded-md hover:bg-accent">
-              Art Journeys
+              {t('nav.journeys')}
             </Link>
             <Link to="/impact" className="px-3 py-2 rounded-md hover:bg-accent">
-              Impact
+              {t('nav.impact')}
             </Link>
           </div>
 
@@ -43,7 +45,7 @@ const Navbar = () => {
             <ThemeToggle />
             <LanguageSwitcher />
             <Button className="bg-heritix-600 hover:bg-heritix-700">
-              Sign In
+              {t('nav.signIn')}
             </Button>
           </div>
 
@@ -63,19 +65,19 @@ const Navbar = () => {
         <div className="md:hidden p-4 bg-background border-t animate-fade-in">
           <div className="flex flex-col space-y-3">
             <Link to="/explore" className="px-3 py-2 rounded-md hover:bg-accent">
-              Explore
+              {t('nav.explore')}
             </Link>
             <Link to="/artisans" className="px-3 py-2 rounded-md hover:bg-accent">
-              Artisans
+              {t('nav.artisans')}
             </Link>
             <Link to="/journeys" className="px-3 py-2 rounded-md hover:bg-accent">
-              Art Journeys
+              {t('nav.journeys')}
             </Link>
             <Link to="/impact" className="px-3 py-2 rounded-md hover:bg-accent">
-              Impact
+              {t('nav.impact')}
             </Link>
             <Button className="bg-heritix-600 hover:bg-heritix-700 w-full">
-              Sign In
+              {t('nav.signIn')}
             </Button>
           </div>
         </div>
