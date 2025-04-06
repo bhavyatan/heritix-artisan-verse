@@ -58,12 +58,28 @@
       "desc": "We offset 100% of the carbon footprint from shipping through verified carbon offset projects."
     }
   },
+  "artisan": {
+    "bio": "Bio",
+    "yearsPracticing": "Years Practicing",
+    "specialties": "Specialties",
+    "contactArtisan": "Contact Artisan",
+    "years": "years",
+    "journeysBy": "Art Journeys by",
+    "shopCreations": "Shop's Creations",
+    "directPurchases": "Direct-to-artisan purchases",
+    "addToCart": "Add to Cart",
+    "tabs": {
+      "about": "About",
+      "journeys": "Art Journeys",
+      "shop": "Shop"
+    }
+  },
   "footer": {
     "tagline": "Empowering artisans globally through direct connections and sustainable practices.",
     "discover": "Discover",
     "joinUs": "Join Us",
     "support": "Support",
-    "copyright": "© 2025 Heritix. All rights reserved.",
+    "copyright": "© {{year}} Heritix. All rights reserved.",
     "tagline2": "Connecting artisans and art lovers directly, preserving cultural heritage around the world."
   }
 }

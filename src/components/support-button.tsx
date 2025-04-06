@@ -1,4 +1,5 @@
 
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 
@@ -8,6 +9,8 @@ type SupportButtonProps = {
 };
 
 const SupportButton = ({ artisanName, onClick }: SupportButtonProps) => {
+  const { t } = useTranslation();
+  
   return (
     <Button 
       onClick={onClick}

@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
   Map, 
@@ -69,6 +70,7 @@ const artisanData = {
 const ArtisanProfile = () => {
   const { id } = useParams<{ id: string }>();
   const artisan = artisanData[id as keyof typeof artisanData];
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (artisan) {
@@ -132,15 +134,15 @@ const ArtisanProfile = () => {
           {/* Artisan Content */}
           <Tabs defaultValue="about" className="mb-16">
             <TabsList className="mb-8">
-              <TabsTrigger value="about">About</TabsTrigger>
-              <TabsTrigger value="journeys">Art Journeys</TabsTrigger>
-              <TabsTrigger value="shop">Shop</TabsTrigger>
+              <TabsTrigger value="about">{t('artisan.tabs.about')}</TabsTrigger>
+              <TabsTrigger value="journeys">{t('artisan.tabs.journeys')}</TabsTrigger>
+              <TabsTrigger value="shop">{t('artisan.tabs.shop')}</TabsTrigger>
             </TabsList>
             
             <TabsContent value="about" className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="md:col-span-2">
-                  <h2 className="text-2xl font-serif font-medium mb-4">Bio</h2>
+                  <h2 className="text-2xl font-serif font-medium mb-4">{t('artisan.bio')}</h2>
                   <p className="text-muted-foreground whitespace-pre-line">
                     {artisan.bio}
                   </p>
@@ -149,13 +151,13 @@ const ArtisanProfile = () => {
                   <div className="flex items-center gap-3">
                     <Clock className="h-5 w-5 text-heritix-700" />
                     <div>
-                      <p className="font-medium">Years Practicing</p>
-                      <p className="text-muted-foreground">{artisan.yearsPracticing} years</p>
+                      <p className="font-medium">{t('artisan.yearsPracticing')}</p>
+                      <p className="text-muted-foreground">{artisan.yearsPracticing} {t('artisan.years')}</p>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <p className="font-medium flex items-center gap-3">
-                      <GraduationCap className="h-5 w-5 text-heritix-700" /> Specialties
+                      <GraduationCap className="h-5 w-5 text-heritix-700" /> {t('artisan.specialties')}
                     </p>
                     <ul className="text-muted-foreground space-y-1">
                       {artisan.specialties.map((specialty, index) => (
@@ -168,7 +170,7 @@ const ArtisanProfile = () => {
                   </div>
                   <div className="pt-4 border-t">
                     <button className="flex items-center gap-2 text-heritix-700 hover:text-heritix-800">
-                      <Contact className="h-5 w-5" /> Contact Artisan
+                      <Contact className="h-5 w-5" /> {t('artisan.contactArtisan')}
                     </button>
                   </div>
                 </div>
@@ -176,7 +178,7 @@ const ArtisanProfile = () => {
             </TabsContent>
             
             <TabsContent value="journeys">
-              <h2 className="text-2xl font-serif font-medium mb-6">Art Journeys by {artisan.name}</h2>
+              <h2 className="text-2xl font-serif font-medium mb-6">{t('artisan.journeysBy')} {artisan.name}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {artisan.journeys.map((journey) => (
                   <JourneyCard 
@@ -194,10 +196,10 @@ const ArtisanProfile = () => {
             
             <TabsContent value="shop">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-serif font-medium">Shop {artisan.name}'s Creations</h2>
+                <h2 className="text-2xl font-serif font-medium">{t('artisan.shopCreations')} {artisan.name}</h2>
                 <p className="flex items-center text-sm text-muted-foreground">
                   <ShoppingBag className="h-4 w-4 mr-1" /> 
-                  Direct-to-artisan purchases
+                  {t('artisan.directPurchases')}
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -215,7 +217,7 @@ const ArtisanProfile = () => {
                       <div className="flex justify-between items-center mt-2">
                         <p className="text-lg font-semibold">${product.price}</p>
                         <button className="text-sm text-heritix-700 hover:text-heritix-800">
-                          Add to Cart
+                          {t('artisan.addToCart')}
                         </button>
                       </div>
                     </div>
