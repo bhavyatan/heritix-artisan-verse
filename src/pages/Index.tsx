@@ -12,7 +12,7 @@ import ImpactSection from "@/features/home/impact-section";
 const Index = () => {
   // Set page title
   useEffect(() => {
-    document.title = "Artisan Marketplace - Connecting Artisans & Art Lovers";
+    document.title = "Heritix - Connecting Artisans & Art Lovers";
   }, []);
 
   return (

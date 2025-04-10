@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-serif font-bold text-heritix-700 dark:text-heritix-500">
-              Artisan Market
+              Heritix
             </span>
           </Link>
 
