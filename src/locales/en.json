@@ -19,6 +19,25 @@
       "subtitle": "Discover skilled craftspeople preserving centuries-old traditions while creating sustainable livelihoods.",
       "viewAll": "View All Artisans"
     },
+    "featuredProducts": {
+      "title": "Shop Handmade",
+      "subtitle": "Explore unique crafts directly from the creators, with prices set by the artisans themselves.",
+      "viewAll": "View All Products"
+    },
+    "journey": {
+      "title": "From Artisan to You",
+      "subtitle": "We eliminate middlemen, connecting you directly with skilled craftspeople around the world.",
+      "step1": "Creation",
+      "step2": "Listing",
+      "step3": "Discovery",
+      "step4": "Direct Support"
+    },
+    "stories": {
+      "title": "Voices of the Makers",
+      "subtitle": "Discover the stories, traditions, and inspirations behind each masterpiece.",
+      "readMore": "Read Story",
+      "exploreAll": "Explore All Stories"
+    },
     "impact": {
       "title": "Our Global Impact",
       "subtitle": "Through direct connections between artisans and customers, we're creating sustainable livelihoods and preserving traditional arts.",
@@ -74,12 +93,44 @@
       "shop": "Shop"
     }
   },
+  "product": {
+    "addToCart": "Add to Cart",
+    "addToWishlist": "Add to Wishlist",
+    "materials": "Materials",
+    "dimensions": "Dimensions",
+    "storyTitle": "Story Behind the Craft",
+    "byArtisan": "By",
+    "shipping": "Shipping",
+    "relatedProducts": "You May Also Like"
+  },
+  "shop": {
+    "title": "Shop Handmade",
+    "subtitle": "Discover unique handcrafted treasures from artisans around the world",
+    "filters": {
+      "title": "Filters",
+      "craft": "Craft Type",
+      "region": "Region",
+      "materials": "Materials",
+      "price": "Price Range",
+      "attributes": "Attributes"
+    },
+    "sortBy": "Sort By",
+    "resultsCount": "{{count}} results"
+  },
+  "community": {
+    "title": "Join Our Community",
+    "subtitle": "Connect with artisans and fellow craft enthusiasts",
+    "discussions": "Discussions",
+    "events": "Upcoming Events",
+    "workshops": "Virtual Workshops",
+    "joinNow": "Join Now"
+  },
   "footer": {
     "tagline": "Empowering artisans globally through direct connections and sustainable practices.",
     "discover": "Discover",
     "joinUs": "Join Us",
     "support": "Support",
-    "copyright": "© {{year}} Heritix. All rights reserved.",
+    "copyright": "© {{year}} Artisan Market. All rights reserved.",
     "tagline2": "Connecting artisans and art lovers directly, preserving cultural heritage around the world."
   }
 }

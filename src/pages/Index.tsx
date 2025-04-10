@@ -4,12 +4,15 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import HeroSection from "@/features/home/hero-section";
 import FeaturedArtisans from "@/features/home/featured-artisans";
+import FeaturedProducts from "@/features/home/featured-products";
+import StorySection from "@/features/home/story-section";
+import JourneySection from "@/features/home/journey-section";
 import ImpactSection from "@/features/home/impact-section";
 
 const Index = () => {
   // Set page title
   useEffect(() => {
-    document.title = "Heritix - Connecting Artisans & Art Lovers";
+    document.title = "Artisan Marketplace - Connecting Artisans & Art Lovers";
   }, []);
 
   return (
@@ -17,7 +20,10 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <JourneySection />
+        <FeaturedProducts />
         <FeaturedArtisans />
+        <StorySection />
         <ImpactSection />
       </main>
       <Footer />
