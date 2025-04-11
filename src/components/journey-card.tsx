@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Progress } from "@/components/ui/progress";
+import { useTranslation } from "react-i18next";
 
 type JourneyCardProps = {
   id: string;
@@ -12,6 +13,7 @@ type JourneyCardProps = {
 };
 
 const JourneyCard = ({ id, title, description, image, progress, artisanName }: JourneyCardProps) => {
+  const { t } = useTranslation();
   return (
     <Link to={`/journeys/${id}`}>
       <div className="art-journey-card">
@@ -22,7 +24,7 @@ const JourneyCard = ({ id, title, description, image, progress, artisanName }: J
             className="w-full h-full object-cover"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <p className="text-white text-xs">By {artisanName}</p>
+            <p className="text-white text-xs">{t("journeys.by", { artisanName })}</p>
           </div>
         </div>
         <div className="p-4 space-y-3">
@@ -30,8 +32,8 @@ const JourneyCard = ({ id, title, description, image, progress, artisanName }: J
           <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
           <div className="space-y-1">
             <div className="flex justify-between text-xs">
-              <span>Progress</span>
-              <span>{progress}%</span>
+              <span>{t("journeys.progress")}</span>
+              <span>{t("journeys.progressPercent", { progress })}</span>
             </div>
             <Progress value={progress} className="h-1.5" />
           </div>

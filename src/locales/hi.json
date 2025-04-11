@@ -5,7 +5,10 @@
     "artisans": "कारीगर",
     "journeys": "कला यात्राएँ",
     "impact": "प्रभाव",
-    "signIn": "साइन इन करें"
+    "signIn": "साइन इन करें",
+    "shop": "दुकान",
+    "stories": "कहानियाँ",
+    "community": "समुदाय"
   },
   "home": {
     "hero": {
@@ -58,6 +61,11 @@
       "desc": "हम सत्यापित कार्बन ऑफसेट परियोजनाओं के माध्यम से शिपिंग से कार्बन फुटप्रिंट का 100% ऑफसेट करते हैं।"
     }
   },
+  "journeys": {
+    "by": "{{artisanName}} द्वारा",
+    "progress": "प्रगति",
+    "progressPercent": "{{progress}}%"
+  },
   "artisan": {
     "bio": "जीवनी",
     "yearsPracticing": "अभ्यास के वर्ष",
@@ -68,6 +76,15 @@
     "shopCreations": "की रचनाएँ खरीदें",
     "directPurchases": "कारीगर से सीधी खरीदारी",
     "addToCart": "कार्ट में जोड़ें",
+    "name": "{{name}}",
+    "craft": "{{craft}}",
+    "location": "{{location}}",
+    "materials": "सामग्री",
+    "dimensions": "आयाम",
+    "artisanName": "{{name}}",
+    "price": "₹{{price}}",
+    "badge": "{{badge}}",
+    "storyTitle": "शिल्प के पीछे की कहानी",
     "tabs": {
       "about": "परिचय",
       "journeys": "कला यात्राएँ",
@@ -80,6 +97,15 @@
     "joinUs": "हमसे जुड़ें",
     "support": "समर्थन",
     "copyright": "© {{year}} हेरिटिक्स. सर्वाधिकार सुरक्षित।",
-    "tagline2": "कारीगरों और कला प्रेमियों को सीधे जोड़ना, दुनिया भर में सांस्कृतिक विरासत का संरक्षण करना।"
+    "tagline2": "कारीगरों और कला प्रेमियों को सीधे जोड़ना, दुनिया भर में सांस्कृतिक विरासत का संरक्षण करना।",
+    "sustainability": "स्थिरता",
+    "forArtisans": "कारीगरों के लिए",
+    "becomePartner": "साझेदार बनें",
+    "ambassadorProgram": "राजदूत कार्यक्रम",
+    "careers": "करियर",
+    "helpCenter": "सहायता केंद्र",
+    "contactUs": "संपर्क करें",
+    "privacyPolicy": "गोपनीयता नीति",
+    "termsOfService": "सेवा की शर्तें"
   }
 }

@@ -31,16 +31,16 @@ const Navbar = () => {
               {t('nav.artisans')}
             </Link>
             <Link to="/shop" className="px-3 py-2 rounded-md hover:bg-accent">
-              Shop
+              {t('nav.shop')}
             </Link>
             <Link to="/stories" className="px-3 py-2 rounded-md hover:bg-accent">
-              Stories
+              {t('nav.stories')}
             </Link>
             <Link to="/impact" className="px-3 py-2 rounded-md hover:bg-accent">
               {t('nav.impact')}
             </Link>
             <Link to="/community" className="px-3 py-2 rounded-md hover:bg-accent">
-              Community
+              {t('nav.community')}
             </Link>
           </div>
 
@@ -89,16 +89,16 @@ const Navbar = () => {
               {t('nav.artisans')}
             </Link>
             <Link to="/shop" className="px-3 py-2 rounded-md hover:bg-accent">
-              Shop
+              {t('nav.shop')}
             </Link>
             <Link to="/stories" className="px-3 py-2 rounded-md hover:bg-accent">
-              Stories
+              {t('nav.stories')}
             </Link>
             <Link to="/impact" className="px-3 py-2 rounded-md hover:bg-accent">
               {t('nav.impact')}
             </Link>
             <Link to="/community" className="px-3 py-2 rounded-md hover:bg-accent">
-              Community
+              {t('nav.community')}
             </Link>
             <Button className="bg-heritix-600 hover:bg-heritix-700 w-full">
               {t('nav.signIn')}

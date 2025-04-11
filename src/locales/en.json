@@ -77,6 +77,11 @@
       "desc": "We offset 100% of the carbon footprint from shipping through verified carbon offset projects."
     }
   },
+  "journeys": {
+    "by": "By {{artisanName}}",
+    "progress": "Progress",
+    "progressPercent": "{{progress}}%"
+  },
   "artisan": {
     "bio": "Bio",
     "yearsPracticing": "Years Practicing",
@@ -87,6 +92,9 @@
     "shopCreations": "Shop's Creations",
     "directPurchases": "Direct-to-artisan purchases",
     "addToCart": "Add to Cart",
+    "name": "{{name}}",
+    "craft": "{{craft}}",
+    "location": "{{location}}",
     "tabs": {
       "about": "About",
       "journeys": "Art Journeys",
@@ -98,6 +106,10 @@
     "addToWishlist": "Add to Wishlist",
     "materials": "Materials",
     "dimensions": "Dimensions",
+    "name": "{{name}}",
+    "artisanName": "{{name}}",
+    "price": "${{price}}",
+    "badge": "{{badge}}",
     "storyTitle": "Story Behind the Craft",
     "byArtisan": "By",
     "shipping": "Shipping",

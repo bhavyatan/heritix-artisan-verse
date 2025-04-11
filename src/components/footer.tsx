@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/sustainability" className="text-gray-300 hover:text-heritix-500">
-                  Sustainability
+                  {t('footer.sustainability')}
                 </Link>
               </li>
             </ul>
@@ -62,22 +62,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/for-artisans" className="text-gray-300 hover:text-heritix-500">
-                  For Artisans
+                  {t('footer.forArtisans')}
                 </Link>
               </li>
               <li>
                 <Link to="/become-partner" className="text-gray-300 hover:text-heritix-500">
-                  Become a Partner
+                  {t('footer.becomePartner')}
                 </Link>
               </li>
               <li>
                 <Link to="/ambassador" className="text-gray-300 hover:text-heritix-500">
-                  Ambassador Program
+                  {t('footer.ambassadorProgram')}
                 </Link>
               </li>
               <li>
                 <Link to="/careers" className="text-gray-300 hover:text-heritix-500">
-                  Careers
+                  {t('footer.careers')}
                 </Link>
               </li>
             </ul>
@@ -88,22 +88,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/help" className="text-gray-300 hover:text-heritix-500">
-                  Help Center
+                  {t('footer.helpCenter')}
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-heritix-500">
-                  Contact Us
+                  {t('footer.contactUs')}
                 </Link>
               </li>
               <li>
                 <Link to="/privacy" className="text-gray-300 hover:text-heritix-500">
-                  Privacy Policy
+                  {t('footer.privacyPolicy')}
                 </Link>
               </li>
               <li>
                 <Link to="/terms" className="text-gray-300 hover:text-heritix-500">
-                  Terms of Service
+                  {t('footer.termsOfService')}
                 </Link>
               </li>
             </ul>
